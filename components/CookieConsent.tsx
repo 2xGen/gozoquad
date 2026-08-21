@@ -38,7 +38,9 @@ export function CookieConsent() {
     setPanelOpen(false);
   }
 
-  const showBanner = ready && consent === null && !panelOpen;
+  if (!ready) return null;
+
+  const showBanner = consent === null && !panelOpen;
 
   return (
     <>
