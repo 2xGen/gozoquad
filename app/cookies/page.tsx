@@ -63,7 +63,7 @@ export default function CookiesPage() {
           Booking links
         </h2>
         <p className="mt-3 leading-relaxed text-muted">
-          {site.affiliateDisclosure} Viator may set its own cookies once you
+          {site.affiliateNotice} Viator may set its own cookies once you
           leave this site.
         </p>
       </section>

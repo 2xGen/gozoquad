@@ -11,6 +11,14 @@ export type Operator = {
   summary: string;
 };
 
+export const operatorsCard = {
+  path: "/operators",
+  name: "Operators",
+  cardTitle: "View operators",
+  driveLabel: "Who runs these tours",
+  blurb: "Pride, Arrigo, Cominology, Barbarossa, and My Dream Malta.",
+} as const;
+
 export const operators: readonly Operator[] = [
   {
     slug: "gozo-pride-tours",

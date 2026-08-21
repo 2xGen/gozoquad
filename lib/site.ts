@@ -27,7 +27,9 @@ export const site = {
   bookingUrl:
     "https://www.viator.com/Gozo-tours/4WD-ATV-and-Off-Road-Tours/d28021-g9-c32?pid=P00276441&mcid=42383&medium=link&campaign=gozoquad",
   affiliateDisclosure:
-    "Affiliate disclosure: Some booking links go to Viator, our trusted partner. We may earn a commission at no extra cost to you.",
+    "Affiliate disclosure: We do not operate these tours. Booking links go to Viator, our trusted partner, where you book with the local operator. We may earn a commission at no extra cost to you.",
+  affiliateNotice:
+    "Affiliate disclosure: We do not operate these tours. Booking links go to Viator, our trusted partner, where you book directly with the local operator. We may earn a commission at no extra cost to you. The operator runs the tour and is responsible for it. Photos and listing copy on this site belong to the operators and are used here under our Viator affiliate agreement.",
   toptours: {
     url: "https://toptours.ai/destinations/gozo",
     label: "TopTours.ai",
@@ -70,7 +72,7 @@ export const facts = [
   { label: "From Malta", value: "6–9 hours, door to door" },
   { label: "Five vehicles", value: "Quad, UTV, buggy, jeep, tuk tuk" },
   { label: "Who drives", value: "You, or a local guide" },
-  { label: "Comino", value: "Often a boat or swim" },
+  { label: "Comino beach", value: "Often a boat or swim" },
 ] as const;
 
 export const steps = [

@@ -107,7 +107,7 @@ export function Footer() {
         className="border-t border-white/10 px-4 py-5 sm:px-6"
       >
         <div className="mx-auto max-w-6xl space-y-2 text-[12px] leading-relaxed text-sand/60">
-          <p>{site.affiliateDisclosure}</p>
+          <p>{site.affiliateNotice}</p>
           <p>
             Owned and operated by{" "}
             <a

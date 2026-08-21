@@ -126,7 +126,7 @@ export async function renderOgImage({
                   padding: "14px 26px",
                 }}
               >
-                Who drives?
+                Compare vehicles
               </div>
               <div
                 style={{
@@ -152,7 +152,7 @@ export async function renderSiteOgImage() {
     photo: "images/utv-2.jpg",
     kicker: "Gozo · Malta",
     title: "The Best Gozo Off-Road Tours",
-    subtitle: "Quad, UTV, buggy, jeep, or tuk tuk — start with who drives",
+    subtitle: "Quad, UTV, buggy, jeep, or tuk tuk — five machines, one island",
   });
 }
 

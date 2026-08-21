@@ -3,6 +3,7 @@ import { BookLink } from "@/components/BookLink";
 import { BookAhead } from "@/components/BookAhead";
 import { StickyBook } from "@/components/HomeStickyBook";
 import { JsonLd } from "@/components/JsonLd";
+import { operatorsCard } from "@/lib/operators";
 import { buildCategoryGraph } from "@/lib/schema";
 import {
   driveBadge,
@@ -357,7 +358,7 @@ function Closing({ others }: { others: ReturnType<typeof otherCategories> }) {
       <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight">
         Looking for a different way around Gozo?
       </h2>
-        <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {others.map((item) => (
           <li key={item.slug} className="h-full">
             <a
@@ -373,6 +374,19 @@ function Closing({ others }: { others: ReturnType<typeof otherCategories> }) {
             </a>
           </li>
         ))}
+        <li className="h-full">
+          <a
+            href={operatorsCard.path}
+            className="group flex h-full min-h-[11.5rem] flex-col rounded-2xl border border-rule bg-sand p-5 hover:border-rust/40"
+          >
+            <p className="min-h-[3.25rem] text-[11px] font-extrabold uppercase leading-snug tracking-[0.14em] text-rust">
+              {operatorsCard.driveLabel}
+            </p>
+            <p className="mt-auto font-display text-xl font-extrabold leading-snug group-hover:text-rust">
+              {operatorsCard.cardTitle}
+            </p>
+          </a>
+        </li>
       </ul>
     </section>
   );

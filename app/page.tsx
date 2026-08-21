@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildHomeGraph } from "@/lib/schema";
 import { socialMetadata } from "@/lib/seo";
 import { facts, faqs, site, steps } from "@/lib/site";
+import { operatorsCard } from "@/lib/operators";
 import {
   categories,
   driveBadge,
@@ -64,7 +65,7 @@ function Hero() {
           The Best Gozo Off-Road Tours
         </h1>
         <h2 className="mt-5 max-w-2xl font-display text-xl font-extrabold leading-snug text-white/95 sm:text-2xl">
-          Quad, UTV, buggy, jeep, or tuk tuk — start with who drives
+          Quad, UTV, buggy, jeep, or tuk tuk — five machines, one island
         </h2>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-sand/90 sm:text-lg">
           Pickup in Malta, a boat to Gozo, then cliffs, salt pans, Dwejra, and
@@ -196,9 +197,9 @@ function Vehicles() {
       className="scroll-mt-4 border-t border-rule bg-sand-2/50"
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:py-20">
-        <p className="eyebrow">Five ways around Gozo</p>
+        <p className="eyebrow">Five vehicles, plus who runs them</p>
         <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
-          Pick the vehicle that matches who drives
+          Pick the machine that fits the island
         </h2>
         <ul className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {categories.map((category) => (
@@ -234,6 +235,22 @@ function Vehicles() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={operatorsCard.path}
+              className="group flex h-full flex-col items-center justify-center rounded-3xl border border-rule bg-sand p-5 text-center hover:border-rust/40"
+            >
+              <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-rust">
+                {operatorsCard.driveLabel}
+              </p>
+              <h3 className="mt-2 font-display text-2xl font-extrabold tracking-tight group-hover:text-rust">
+                {operatorsCard.cardTitle}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {operatorsCard.blurb}
+              </p>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -245,7 +262,7 @@ function Compare() {
     <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:py-20">
       <p className="eyebrow">Side by side</p>
       <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Quad, UTV, buggy, jeep, tuk tuk — who drives?
+        Quad, UTV, buggy, jeep, tuk tuk — same island, different ride
       </h2>
       <div className="mt-8 overflow-x-auto rounded-2xl border border-rule">
         <table className="w-full min-w-[36rem] text-left text-sm">
@@ -378,7 +395,7 @@ function ClosingCta() {
         </h2>
         <p className="mt-4 text-sand/80">
           Open quads, UTV, buggy, jeep, or tuk tuk — then book the tour that
-          matches who drives.
+          fits.
         </p>
         <div className="mt-6 flex justify-center">
           <BookLink className="rounded-full bg-rust px-7 py-3.5 text-base font-extrabold text-white hover:bg-rust-2">
