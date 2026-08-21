@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #1a1814;
+  --color-night: #241c14;
+  --color-sand: #f6efe4;
+  --color-sand-2: #eadbc8;
+  --color-rust: #c45c26;
+  --color-rust-2: #a34718;
+  --color-sea: #1d6b73;
+  --color-sea-2: #15555c;
+  --color-ochre: #d4a017;
+  --color-rule: #ddcfb8;
+  --color-muted: #5c5348;
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-ink);
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: #d4a017;
+  color: #1a1814;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rust);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 80;
+  background: var(--color-night);
+  color: var(--color-sand);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-rust);
+}

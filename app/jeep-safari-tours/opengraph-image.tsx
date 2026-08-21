@@ -1,0 +1,12 @@
+import { ogContentType, ogSize, renderCategoryOgImage } from "@/lib/og-image";
+import { categoryBySlug } from "@/lib/tours";
+
+const category = categoryBySlug("jeep-safari")!;
+
+export const alt = category.heroAlt;
+export const size = ogSize;
+export const contentType = ogContentType;
+
+export default async function OpenGraphImage() {
+  return renderCategoryOgImage("jeep-safari");
+}
