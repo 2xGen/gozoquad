@@ -1,5 +1,6 @@
 import { ogContentType, ogSize, renderOgImage } from "@/lib/og-image";
 
+export const runtime = "nodejs";
 export const alt =
   "Gozo tour operators: Pride, Arrigo, Cominology, Barbarossa, and My Dream Malta.";
 export const size = ogSize;

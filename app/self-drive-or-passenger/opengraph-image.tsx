@@ -1,5 +1,6 @@
 import { ogContentType, ogSize, renderOgImage } from "@/lib/og-image";
 
+export const runtime = "nodejs";
 export const alt =
   "Do you drive a Gozo quad yourself, or ride as a passenger?";
 export const size = ogSize;

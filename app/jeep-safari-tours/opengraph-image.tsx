@@ -3,6 +3,7 @@ import { categoryBySlug } from "@/lib/tours";
 
 const category = categoryBySlug("jeep-safari")!;
 
+export const runtime = "nodejs";
 export const alt = category.heroAlt;
 export const size = ogSize;
 export const contentType = ogContentType;

@@ -1,11 +1,12 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import sharp from "sharp";
 import { site } from "./site";
 import { categoryBySlug } from "./tours";
 
 export const ogSize = { width: 1200, height: 630 };
-export const ogContentType = "image/png";
+export const ogContentType = "image/jpeg";
 
 type OgCard = {
   photo: string;
@@ -28,7 +29,7 @@ export async function renderOgImage({
   const ext = photo.toLowerCase().endsWith(".png") ? "png" : "jpeg";
   const src = `data:image/${ext};base64,${file.toString("base64")}`;
 
-  return new ImageResponse(
+  const png = new ImageResponse(
     (
       <div
         style={{
@@ -145,6 +146,16 @@ export async function renderOgImage({
     ),
     { ...ogSize },
   );
+
+  const jpeg = await sharp(Buffer.from(await png.arrayBuffer()))
+    .jpeg({ quality: 78, mozjpeg: true })
+    .toBuffer();
+
+  return new Response(jpeg, {
+    headers: {
+      "Content-Type": ogContentType,
+    },
+  });
 }
 
 export async function renderSiteOgImage() {

@@ -5,9 +5,9 @@ export const site = {
   url: "https://gozoquadtours.fun",
   locale: "en_US",
   language: "en-US",
-  title: "The Best Gozo Off-Road Tours (Who Drives, Stops & What’s Included)",
+  title: "The Best Gozo Off-Road Tours | Quad, UTV, Jeep",
   description:
-    "Compare Gozo quad, UTV, buggy, jeep, and tuk tuk tours: who drives, the island stops, what’s included, and live dates to book from Malta.",
+    "Compare Gozo quad, UTV, buggy, jeep, and tuk tuk tours. Who drives, the stops, what’s included, and dates from Malta.",
   keywords: [
     "Gozo UTV tour",
     "UTV Gozo",
@@ -45,7 +45,7 @@ export const site = {
     url: "/opengraph-image",
     width: 1200,
     height: 630,
-    alt: "The Best Gozo Off-Road Tours — quad, UTV, buggy, jeep, or tuk tuk from Malta.",
+    alt: "The Best Gozo Off-Road Tours — five machines, one island.",
   },
 } as const;
 

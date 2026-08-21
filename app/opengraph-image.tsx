@@ -1,6 +1,7 @@
 import { ogContentType, ogSize, renderSiteOgImage } from "@/lib/og-image";
 import { site } from "@/lib/site";
 
+export const runtime = "nodejs";
 export const alt = site.ogImage.alt;
 export const size = ogSize;
 export const contentType = ogContentType;

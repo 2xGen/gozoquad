@@ -3,6 +3,7 @@ import { categoryBySlug } from "@/lib/tours";
 
 const category = categoryBySlug("self-drive-quads")!;
 
+export const runtime = "nodejs";
 export const alt = category.heroAlt;
 export const size = ogSize;
 export const contentType = ogContentType;

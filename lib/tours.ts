@@ -83,8 +83,7 @@ export const categories: Category[] = [
     driveLabel: "You drive (or ride pillion)",
     driveRole: "you-or-passenger",
     title: "The 4 Best Gozo Quad Tours",
-    metaTitle:
-      "The 4 Best Gozo Quad Tours (Who Drives, Stops & What’s Included)",
+    metaTitle: "The 4 Best Gozo Quad Tours from Malta",
     description:
       "The four best Gozo quad bike tours: who drives, the island stops, what’s included, and live dates to book.",
     tagline: "570cc ATV · you on the bike",
@@ -160,8 +159,7 @@ export const categories: Category[] = [
     driveLabel: "Usually a ride-along or 6-seater",
     driveRole: "passenger",
     title: "The 4 Best Gozo UTV Tours",
-    metaTitle:
-      "The 4 Best Gozo UTV Tours (Who Drives, Stops & What’s Included)",
+    metaTitle: "The 4 Best Gozo UTV Tours from Malta",
     description:
       "The four best Gozo UTV and 4x4 tours: who drives, the island stops, what’s included, and live dates to book.",
     tagline: "Open 4x4 · four tours to compare",
@@ -237,8 +235,7 @@ export const categories: Category[] = [
     driveLabel: "You drive at sunset, or a guide drives",
     driveRole: "you-or-passenger",
     title: "The 4 Best Gozo Buggy Tours",
-    metaTitle:
-      "The 4 Best Gozo Buggy Tours (Who Drives, Stops & What’s Included)",
+    metaTitle: "The 4 Best Gozo Buggy Tours from Malta",
     description:
       "The four best Gozo buggy tours: Pride’s sunset self-drive, a Ryker at golden hour, Arrigo’s chauffeured 4WD, and a Comino-plus-sunset combo.",
     tagline: "Sunset self-drive · or a 4WD with a guide",
@@ -304,8 +301,7 @@ export const categories: Category[] = [
     driveLabel: "A guide drives, or you in an e-jeep",
     driveRole: "you-or-passenger",
     title: "The 4 Best Gozo Jeep Tours",
-    metaTitle:
-      "The 4 Best Gozo Jeep Tours (Who Drives, Stops & What’s Included)",
+    metaTitle: "The 4 Best Gozo Jeep Tours from Malta",
     description:
       "The four best Gozo jeep tours: Pride’s chauffeured 4x4, a self-drive e-jeep, a UTV sold as a jeep tour, and Arrigo’s jeep with lunch.",
     tagline: "Shared 4x4 · or you drive an e-jeep",
@@ -371,8 +367,7 @@ export const categories: Category[] = [
     driveLabel: "Chauffeur · road vehicle",
     driveRole: "passenger",
     title: "The 3 Best Gozo Tuk Tuk Tours",
-    metaTitle:
-      "The 3 Best Gozo Tuk Tuk Tours (Who Drives, Stops & What’s Included)",
+    metaTitle: "The 3 Best Gozo Tuk Tuk Tours from Malta",
     description:
       "The three best Gozo tuk tuk tours: a chauffeured island loop, a Comino mini cruise, and a sunset tuk tuk with a lagoon swim.",
     tagline: "Sit back · chauffeur · villages and Comino",
