@@ -40,6 +40,7 @@ export function socialMetadata({
           width: site.ogImage.width,
           height: site.ogImage.height,
           alt,
+          type: "image/jpeg",
         },
       ],
     },

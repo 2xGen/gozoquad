@@ -2,7 +2,7 @@ export const site = {
   name: "Gozo Quad Tours",
   shortName: "Gozo Quad Tours",
   domain: "gozoquadtours.fun",
-  url: "https://gozoquadtours.fun",
+  url: "https://www.gozoquadtours.fun",
   locale: "en_US",
   language: "en-US",
   title: "The Best Gozo Off-Road Tours | Quad, UTV, Jeep",
@@ -42,10 +42,11 @@ export const site = {
     body: "Full-day quads, UTV loops, and sunset buggies fill first in summer. Jeep and tuk tuk tours have more seats.",
   },
   ogImage: {
-    url: "/opengraph-image",
+    url: "/og.jpg",
     width: 1200,
     height: 630,
     alt: "The Best Gozo Off-Road Tours — five machines, one island.",
+    type: "image/jpeg",
   },
 } as const;
 
